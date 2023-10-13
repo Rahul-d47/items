@@ -82,8 +82,8 @@ const updateprd = async(req, res)=>{
         product=await Product.findByIdAndUpdate(req.params.id);
         res.json(product)
     }
-    catch(err){
-       console.log(err)
+    catch(error){
+       console.log(error)
         res.status(500).send("Internal some error occured")
     }
 }
