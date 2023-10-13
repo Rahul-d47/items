@@ -88,3 +88,4 @@ const updateprd = async(req, res)=>{
     }
 }
 module.exports =  { prdinsert,displayprd,deleteprd,singleview,updateprd }
+
