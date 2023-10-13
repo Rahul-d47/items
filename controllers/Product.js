@@ -60,8 +60,8 @@ const singleview = async(req,res)=>{
         }
         res.json(product)
     }
-    catch(err){
-        console.log(err)
+    catch(error){
+        console.log(error)
         res.status(500).send("Internal some error occured")
     }
 }
