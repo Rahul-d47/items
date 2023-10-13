@@ -79,7 +79,7 @@ const updateprd = async(req, res)=>{
             return res.status(404).send("not found");
         }
 
-        product=await Product.findByIdAndUpdate(req.params.id);
+        product       =          await Product.findByIdAndUpdate(req.params.id);
         res.json(product)
     }
     catch(error){
